@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+  <meta charset="UTF-8">
+  <title>Fake Review Detector APP</title>
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+    </head>
+
+    <body bgcolor="lightblue">
+
+        <center>
+        <h1 style="color:blue;">Machine Learning Web App</h1>
+        <p style="color:black;"><b>FAKE REVIEW DETECTOR</b></p>
+        </center>
+                      
+    	        <center>
+                <form action="{{ url_for('predict') }}" method="POST">
+                
+                <textarea name="Message" rows="20" cols="75" placeholder="Enter Your Message Here..."></textarea><br/>
+
+                
+                <br/>
+
+                <input type="submit" value="Predict">
+        	</form>
+                </center>
+              
+              
+             
+              <br/>
+              <center>
+              <h2 style="color:Green;">{{ prediction }}</h2>
+              
+              
+              </center>
+
+              <br/>
+              
+              
+        
+       <div class='footer'>
+           <center>
+           <p>Made by Anusuya.</p>
+           </center>
+       </div>
+
+    </body>
+</html>
